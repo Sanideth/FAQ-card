@@ -96,13 +96,11 @@
     right: 0;
     cursor: pointer;
     outline: none;
-    &::after {
-      content: url("/img/icon-arrow-down.svg");
-    }
-    &:checked {
+
+    &:checked ~ .main__label::after {
       transform: rotate(180deg);
     }
-    &:checked ~ p {
+    &:checked ~ .main__list-answer {
       display: block;
       margin-top: 0.5em;
       color: var(--color-text-tertiary);
@@ -119,6 +117,14 @@
     font-size: 1.4rem;
     color: var(--color-text-secondary);
     transition: all 0.4s;
+    width: 100%;
+    &::after {
+      content: url("/img/icon-arrow-down.svg");
+      display: inline-block;
+      position: absolute;
+      right: 0;
+      transition: all 0.4s;
+    }
 
     &:hover {
       color: var(--color-text-main);
