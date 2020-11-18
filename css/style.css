@@ -62,7 +62,6 @@ p {
     background-repeat: no-repeat;
     flex: 0 1 55%;
     padding-top: 10em;
-    overflow: hidden;
     height: 60rem;
     position: relative; }
     @media only screen and (max-width: 71.875em) {
@@ -70,8 +69,12 @@ p {
         background-image: url("/img/bg-pattern-mobile.svg");
         background-position: 52.5% 1rem;
         background-size: 25rem;
-        overflow: visible;
         padding-top: 0; } }
+  .main__img-container {
+    overflow: hidden; }
+    @media only screen and (max-width: 71.875em) {
+      .main__img-container {
+        overflow: visible; } }
   .main__img-online {
     display: block;
     margin-left: -4rem; }

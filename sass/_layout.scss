@@ -14,7 +14,6 @@
     background-repeat: no-repeat;
     flex: 0 1 55%;
     padding-top: 10em;
-    overflow: hidden;
     height: 60rem;
     position: relative;
 
@@ -22,11 +21,15 @@
       background-image: url("/img/bg-pattern-mobile.svg");
       background-position: 52.5% 1rem;
       background-size: 25rem;
-      overflow: visible;
       padding-top: 0;
     }
   }
-
+  &__img-container {
+    overflow: hidden;
+    @media only screen and (max-width: $bp-largest) {
+      overflow: visible;
+    }
+  }
   &__img-online {
     display: block;
     margin-left: -4rem;
