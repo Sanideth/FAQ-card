@@ -14,6 +14,7 @@
     flex: 0 1 55%;
     padding-top: 10em;
     position: relative;
+    height: 61rem;
 
     @media only screen and (max-width: $bp-largest) {
       background-image: url("../img/bg-pattern-mobile.svg");
