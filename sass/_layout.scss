@@ -2,8 +2,7 @@
   display: flex;
   background-color: #fff;
   border-radius: 3rem;
-  width: 70vw;
-  max-width: 100rem;
+  margin-bottom: 5rem;
   @media only screen and (max-width: $bp-largest) {
     flex-direction: column;
   }
@@ -14,7 +13,6 @@
     background-repeat: no-repeat;
     flex: 0 1 55%;
     padding-top: 10em;
-    height: 60rem;
     position: relative;
 
     @media only screen and (max-width: $bp-largest) {
@@ -137,13 +135,9 @@
 
 .attribution {
   font-size: 1.6rem;
-  position: absolute;
-  bottom: 0;
-  left: 50%;
-  transform: translate(-50%, -50%);
+
   text-align: center;
   color: #fff;
-  width: 100%;
 
   & > a {
     color: var(--color-text-main);

@@ -23,6 +23,7 @@ $bp-medium: 53.125em; //850 px
 $bp-small: 37.5em; //600px
 
 html {
+  overflow: scroll;
   font-size: 62.5%;
   @media only screen and (max-width: $bp-largest) {
     font-size: 55%;
@@ -42,16 +43,19 @@ body {
     var(--bg-color-blue)
   );
   height: 100vh;
-
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  overflow-y: scroll;
   font-family: "Kumbh Sans", sans-serif;
 }
 
 .container {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  max-width: 120rem;
+  width: 70vw;
+  max-width: 100rem;
+  min-height: 0rem;
+  padding-top: 10rem;
 }
 
 label {
