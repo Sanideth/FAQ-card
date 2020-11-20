@@ -101,6 +101,9 @@ p {
     justify-content: center;
     flex-direction: column;
     align-items: center; }
+    @media only screen and (max-width: 53.125em) {
+      .main__column-right {
+        padding: 0 4em 5em 4em; } }
   .main__list {
     list-style: none;
     font-family: inherit;
